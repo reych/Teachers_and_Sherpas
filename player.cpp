@@ -23,3 +23,7 @@ void Player::setHP(int health){
 string Player::getName(){
 	return _name;
 }
+
+void Player::addToInventory(string itemName){
+	inventory.push_back(itemName);
+}
