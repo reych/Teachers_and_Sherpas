@@ -13,11 +13,12 @@ public:
 	int getHP();
 	void setHP(int health);
 	string getName();
+	void addToInventory(string itemName);
 
 private:
 	string _name;
 	int _health;
-	//vector<Item*> inventory;
+	vector<string> inventory;
 	vector<string> attacks;
 };
 
