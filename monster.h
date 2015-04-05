@@ -11,7 +11,7 @@ public:
 	Monster(string name);
 	virtual void attack(Player* p, string result);
 	virtual void specialMove(string result);
-	virtual void taunt();
+	virtual string taunt();
 
 	string getName();
 	int getHP();
