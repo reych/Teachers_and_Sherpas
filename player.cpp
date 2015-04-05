@@ -9,14 +9,15 @@ Player::Player(string name){
 
 }
 
-void Player::attack(Monster* m){
-	//attack power, rand
+int Player::attack(){
+	int attackVal=0;//implement attack
+	return attackVal;
 }
 
 int Player::getHP(){
 	return _health;
 }
-int Player::setHP(int health){
+void Player::setHP(int health){
 	_health = health;
 }
 string Player::getName(){

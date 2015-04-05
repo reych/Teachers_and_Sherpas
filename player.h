@@ -1,17 +1,17 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include "monster.h"
 #include <string>
 #include <vector>
 using namespace std;
 
+
 class Player{
 public:
 	Player(string name);
-	void attack(Monster* m);
+	int attack();
 	int getHP();
-	int setHP(int health);
+	void setHP(int health);
 	string getName();
 
 private:

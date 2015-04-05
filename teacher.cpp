@@ -2,6 +2,7 @@
 #include <string>
 #include <sstream>
 #include <ctime>
+#include <cstdlib>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ Teacher::Teacher(string name):Monster(name){
 }
 
 void Teacher::attack(Player* p, string& result){
-	srand(int seed);
+	srand(time(0));
 	int hitChance = rand();
 	double threshold = RAND_MAX * _accuracy;
 	if(hitChance <= threshold){
@@ -40,7 +41,7 @@ void Teacher::attack(Player* p, string& result){
 }
 
 void Teacher::specialMove(string& result){
-	srand(seed);
+	srand(time(0));
 	stringstream ss;
 	ss<<_name<< " calls upon the Kernel God..."<<'\n';
 	int intelligence = rand()%10 + 1;
