@@ -2,6 +2,7 @@
 #define TEACHER_H
 
 #include "monster.h"
+#include "player.h"
 #include <string>
 
 using namespace std;

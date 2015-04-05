@@ -17,7 +17,7 @@ public:
 private:
 	string _name;
 	int _health;
-	vector<Item*> inventory;
+	//vector<Item*> inventory;
 	vector<string> attacks;
 };
 
